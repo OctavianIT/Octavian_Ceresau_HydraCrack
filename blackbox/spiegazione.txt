@@ -1,0 +1,16 @@
+
+1) Nmap Scan Ip (NmapScanIP.png) -  
+2) Servizio beccato (Servizo beccato.png)
+3) Ho trovato una directory /robots grazie a GoBuster
+4) Accesso alla pagina http://192.168.56.101/backup_wordpress/  (BUwordpress.png)
+
+5) Facendo Dictionary attack alle directory sono uscito con 2 principali vuln:
+- http://192.168.56.101/backup_wordpress/xmlrpc.php?rsd
+- http://192.168.56.101/backup_wordpress/wp-content/plugins/akismet/akismet.php (plugin)
+
+6) Ora provo a fare un attacco a dizionario sulla pagina login di wordpress (Codice.png)
+7) Risultato (PassTrovata.png)
+8) Pagina Wordpress (Wordpress.png)
+9) Ho cambiato tema per comodità e ho inserito il codice nel footer, prima di inserire il codice ho fatto delle prove aggiungendo un h1 per vedere se funzionava il tutto (WordPressPHP.png)(WordPress2.png)
+
+ 
